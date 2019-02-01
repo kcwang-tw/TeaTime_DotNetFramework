@@ -1,29 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
-using TeaTime.Api.Models;
+using TeaTime.Core.Entities;
+using TeaTime.Core.Interfaces;
 
 namespace TeaTime.Api.Controllers
 {
     public class ShopsController : ApiController
     {
-        private IEnumerable<Shop> _testShops = new List<Shop>
+        private readonly IShopDataAccess _shopData;
+
+        public ShopsController(IShopDataAccess shopData)
         {
-            new Shop { Id = "HelBrown", Name = "桃分伯朗", Phone = "033597567" },
-            new Shop { Id = "LnkBrown", Name = "林口伯朗", Phone = "032110056" }
-        };
+            _shopData = shopData;
+        }
 
         public IEnumerable<Shop> GetAllShops()
         {
-            return _testShops;
+            var shops = _shopData.GetAll();
+            return shops;
         }
 
         public IHttpActionResult GetShop(string id)
         {
-            var shop = _testShops.FirstOrDefault(s => s.Id == id);
+            var shop = _shopData.GetAll().FirstOrDefault(s => s.Id == id);
             if (shop == null)
             {
                 return NotFound();

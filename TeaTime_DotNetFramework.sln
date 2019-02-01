@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaTime.Api", "TeaTime.Api\TeaTime.Api.csproj", "{91F4F50C-0FB3-4205-9C08-0FB6DD573B1C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Web", "1. Web", "{70DD88BE-3C9D-4E11-AF2C-5C4AB772F679}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application Core", "2. Application Core", "{B596B505-AB16-4C72-B46C-5FEC8142E738}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infrastructure", "3. Infrastructure", "{0239F6E4-6E43-4EB0-BBD8-8F3E35A8D411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaTime.Core", "TeaTime.Core\TeaTime.Core.csproj", "{D70920E1-D34A-4223-BFC0-03E143F466DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaTime.Sqlite", "TeaTime.Sqlite\TeaTime.Sqlite.csproj", "{DAEA71D5-0B3F-4C88-8E8D-3A16697C852C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +25,22 @@ Global
 		{91F4F50C-0FB3-4205-9C08-0FB6DD573B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F4F50C-0FB3-4205-9C08-0FB6DD573B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91F4F50C-0FB3-4205-9C08-0FB6DD573B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70920E1-D34A-4223-BFC0-03E143F466DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70920E1-D34A-4223-BFC0-03E143F466DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70920E1-D34A-4223-BFC0-03E143F466DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70920E1-D34A-4223-BFC0-03E143F466DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAEA71D5-0B3F-4C88-8E8D-3A16697C852C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAEA71D5-0B3F-4C88-8E8D-3A16697C852C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAEA71D5-0B3F-4C88-8E8D-3A16697C852C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAEA71D5-0B3F-4C88-8E8D-3A16697C852C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91F4F50C-0FB3-4205-9C08-0FB6DD573B1C} = {70DD88BE-3C9D-4E11-AF2C-5C4AB772F679}
+		{D70920E1-D34A-4223-BFC0-03E143F466DE} = {B596B505-AB16-4C72-B46C-5FEC8142E738}
+		{DAEA71D5-0B3F-4C88-8E8D-3A16697C852C} = {0239F6E4-6E43-4EB0-BBD8-8F3E35A8D411}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04063562-E1FC-4112-B9C3-796AB1B66F1C}

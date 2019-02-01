@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace TeaTime.Api.Models
+﻿namespace TeaTime.Core.Entities
 {
     public class Shop
     {
